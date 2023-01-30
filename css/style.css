@@ -35,7 +35,7 @@ img {
   background-color: #FFFFFF;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 767px) {
   img {
     width: 20%;
     margin-bottom: 2rem;
