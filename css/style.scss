@@ -1,0 +1,45 @@
+* {
+    color: white;
+}
+
+img {
+    width: 10%;
+    margin-bottom: 1rem;
+}
+
+
+$colors : (
+    "1": hsl(31, 77%, 52%),
+    "2": hsl(184, 100%, 22%),
+    "3": hsl(179, 100%, 13%),
+);
+
+@each $i, $color in $colors {
+    .card-#{$i} {
+        background-color: $color;
+    }
+    .btnn#{$i}{
+        color: $color;
+    }
+}
+
+.btn{
+    background-color: #FFFFFF;
+}
+
+@media screen and (min-width: 992px){
+    img {
+        width: 20%;
+        margin-bottom: 2rem;
+    }
+    
+    h2 {
+        margin-bottom: 2rem;
+    }
+
+    .card {
+        padding: 2rem;
+        height: 60%;
+    }
+
+}
